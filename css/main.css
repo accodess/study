@@ -1,0 +1,256 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+ 	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+h1, span {
+	line-height: 1.55em;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header {
+  	background: rgba(78,192,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,192,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=1 );
+	padding-top: 65px;
+	padding-bottom: 142px;
+	color: #fff;
+
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.offer {
+	width: 575px;
+}
+
+.title {
+	font-size: 37px;
+	width: 500px;
+}
+
+.title span {
+	font-size: 59px;
+}
+
+.intro {
+	width: 400px;
+	margin-top: 30px;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffd429;
+	color: #2e2a1b;
+	display: block;
+	width: 222px;
+	padding: 20px 5px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 50px;
+	transition: all 0.5s ease;
+	/*border-color: #ffd429;*/
+}
+
+.btn:hover {
+	background: #d8761d;
+}
+
+.spot {
+	margin-top: 45px;
+}
+
+.learn {
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+.section-title {
+	font-size: 30px;
+	text-align: center;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.skill {
+	width: 320px;
+	background: url('../img/icon.jpg') no-repeat center top;
+	padding-top: 110px;
+	text-align: center;
+}
+	
+.skill-title {
+	font-size: 19px;
+}
+
+.skill-text {
+	margin-top: 9px;
+}      
+
+.skill-travel {
+	width: 280px;
+	background: url('../img/icon2.jpg') no-repeat center top;
+}       
+
+.skill-create {
+	width: 340px;
+	background: url('../img/icon3.jpg') no-repeat center top;
+}
+
+.mail {
+	background: #ecf3f8;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+
+.form {
+	margin-top: 58px;
+}
+
+.input {
+	width: 343px;
+	border-radius: 1px solid #bbbbbb;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	height: 48px;
+	padding-left: 24px;
+	display: block;
+	margin: 15px auto;
+}
+
+.btn-form {
+	border: none;
+	margin:  auto;
+	width: 343px;
+}
+
+.footer {
+	padding: 62px 0;
+	background: #164d7a;
+}
+
+.credits {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.header {
+		padding-bottom: 65px
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.title {
+		margin-top: 20px
+	}
+	.intro {
+		width: auto;
+	}
+	.spot {
+		display: block;
+		width: 550px;
+	}
+	.skills {
+		flex-direction: column;
+		margin-top: 40px;
+
+	}
+	.skill {
+		width: auto;
+    	background: url(../img/icon.jpg) no-repeat left bottom;
+    	text-align: left;
+    	padding-left: 100px;
+    	padding-top: 30px;
+
+	}
+	.skill-travel {
+		background: url('../img/icon2.jpg') no-repeat left bottom;
+	}       
+
+	.skill-create {
+		background: url('../img/icon3.jpg') no-repeat left bottom;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.spot {
+		width: 100%;
+	}
+}
+
+/* 0-320px - 576px  */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	.wrapper {
+		width: auto;
+	}
+	.offer {
+		width: auto;
+	}
+	.title {
+		width: auto;
+	}
+	.input {
+		width: 100%;
+    	font-size: 14px;
+	}
+	.btn-form {
+		width: 100%;
+	}
+}
